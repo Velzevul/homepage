@@ -29,6 +29,6 @@
   text-align: left;
   text-justify: auto;
 
-  font-size: #{$base-font-size}px; font-size: rem($base-font-size);
-  line-height: #{$base-line-height}px; line-height: rem($base-line-height);
+  font-size: rem($base-font-size);
+  line-height: rem($base-line-height);
 }

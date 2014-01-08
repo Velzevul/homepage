@@ -9,6 +9,7 @@
     "grunt-contrib-watch": "~0.5.3",
     "grunt-contrib-compass": "~0.7.0",
     "grunt-express": "~1.2.1",
-    "grunt-open": "~0.2.2"
+    "grunt-open": "~0.2.2",
+    "grunt-contrib-cssmin": "~0.7.0"
   }
 }

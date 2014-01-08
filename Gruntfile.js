@@ -36,10 +36,22 @@ module.exports = function(grunt) {
           livereload: true
         }
       }
+    },
+
+    cssmin: {
+      dist: {
+        options: {
+          banner: '/* See not minified files on Github */',
+          report: 'gzip',
+        },
+        files: {
+          'app/css/main.min.css' : ['app/css/main.css']
+        }
+      }
     }
   });
 
-
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-express');

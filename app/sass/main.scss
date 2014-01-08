@@ -6,6 +6,8 @@
  */
 
 // Global configurations & fonts
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
+@import url(http://fonts.googleapis.com/css?family=Bad+Script&text=%26);
 @import "compass";
 @import "config";
 
@@ -15,6 +17,7 @@
 @import "mixins/breakpoint";
 
 // (SMACSS) Base styles: resets & bare element styling
+@import "base/icon-font";
 @import "base/normalize";
 @import "base/elements";
 
@@ -28,10 +31,18 @@
 @import "layouts/row";
 @import "layouts/wrap";
 @import "layouts/justified";
+@import "layouts/grid";
 
 // (SMACSS) Styles for modules
-// ...modules here...
+@import "modules/greeting";
+@import "modules/decorative";
+@import "modules/separator";
+@import "modules/project";
+@import "modules/homelink";
+@import "modules/footer";
 
 // (SMACSS) Global state styles.
 //          Module-specific styles are inside module file
 @import "states";
+
+@import "shame";

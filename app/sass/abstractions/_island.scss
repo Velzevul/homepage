@@ -6,7 +6,7 @@
  */
 
 .island {
-  padding: 20px; padding: rem(20);
+  padding: rem(20);
 
   & > :last-child {
     margin-bottom: 0;
@@ -16,11 +16,11 @@
 .island--small {
   @extend .island;
 
-  padding: 10px; padding: rem(10);
+  padding: rem(10);
 }
 
 .island--large {
   @extend .island;
 
-  padding: 50px; padding: rem(50);
+  padding: rem(50);
 }

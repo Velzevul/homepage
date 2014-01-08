@@ -1,0 +1,23 @@
+.homelink {
+  position: fixed;
+  top: rem($base-line-height/2); left: rem($base-line-height/2);
+
+  display: block;
+  width: rem(1.5*$base-line-height); height: rem(1.5*$base-line-height);
+
+  text-align: center;
+  font-size: rem(20);
+  line-height: rem(1.5*$base-line-height);
+
+  border-radius: 50%;
+  color: $dark;
+  background: white;
+
+  @include transition-property(background-color, color);
+  @include transition-duration(0.3s, 0.3s);
+}
+
+.homelink--inv {
+  color: white;
+  background: $dark;
+}

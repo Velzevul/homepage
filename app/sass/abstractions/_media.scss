@@ -11,12 +11,12 @@
 
  .media__figure {
   float: left;
-  margin-right: 10px;
+  margin-right: rem(10);
 
   .media--rev & {
     float: right;
     margin-right: 0;
-    margin-left: 10px;
+    margin-left: rem(10px);
   }
  }
 

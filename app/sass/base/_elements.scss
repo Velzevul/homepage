@@ -13,25 +13,53 @@
 }
 
 html {
-  font-family: $base-font-family;
-  font-size: #{$base-font-size}px;
-  line-height: #{$base-line-height}px;
-  -webkit-font-smoothing: antialiased;
+  height: 100%;
+  font-size: 80%;
+
+  @include breakpoint($bp-screen-medium) {
+    font-size: 100%;
+  }
 }
 
 body {
+  height: 100%;
+  font-family: $base-font-family;
+  font-size: rem($base-font-size);
+  line-height: rem($base-line-height);
+  -webkit-font-smoothing: antialiased;
 }
 
 h1 {
   margin: 0;
+
+  font-size: rem(50);
+  line-height: rem(2*$base-line-height);
+  font-weight: 300;
 }
 
 h2 {
   margin: 0;
+
+  font-size: rem(29);
+  line-height: rem(2*$base-line-height);
+  font-weight: 400;
+
+  text-align: center;
 }
 
 h3 {
-  margin: 0;
+  margin: 0 0 rem($base-line-height) 0;
+
+  p + & {
+    margin-top: rem(2 * $base-line-height);
+  }
+
+  font-size: rem($base-font-size);
+  line-height: rem($base-line-height);
+  font-weight: 400;
+  font-style: italic;
+
+  color: $medium;
 }
 
 h4 {
@@ -39,7 +67,7 @@ h4 {
 }
 
 p {
-  margin: 0;
+  margin: 0 0 rem($base-line-height) 0;
 }
 
 input {
@@ -55,8 +83,8 @@ button {
 }
 
 img {
-  display: inline-block;
-  max-width: 100%;
+  display: block;
+  width: 100%;
 }
 
 ul {

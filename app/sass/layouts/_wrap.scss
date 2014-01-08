@@ -4,7 +4,28 @@
  * handles horizontal boundary of objects
  */
 
-.l-wrap {
+[class^="l-wrap"] {
   margin-left: auto;
-  margin-right: auto
+  margin-right: auto;
+  overflow-x:hidden;
+
+  & > :last-child {
+    margin-bottom: 0;
+  }
+
+  & + & {
+    margin-top: rem(2*$base-line-height);
+  }
+
+  max-width: rem(900);
+  padding: 0 rem(50);
+
+  &[class*="--wide"] {
+    max-width: rem(1132);
+    padding: 0 rem(50);
+  }
+
+  &[class*="--full"] {
+    height: 100%;
+  }
 }

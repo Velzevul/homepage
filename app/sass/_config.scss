@@ -1,13 +1,15 @@
 // font configs
-$base-font-family: sans-serif;
-$base-font-size:   14;
-$base-line-height: 18;
+$base-font-family: 'Open Sans', sans-serif;
+$base-font-size:   19;
+$base-line-height: 32;
 
 // colors
-// ...
+$dark:   #2D2D33;
+$medium: #6E6E75;
+$light:  #DCDCDC;
 
 // breakpoint widths in pixels
-// ...
+$screen-medium: 700;
 
 // generate media-queries parameters out of breakpoints
-// ...
+$bp-screen-medium: '(min-width: #{$screen-medium}px)';

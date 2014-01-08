@@ -1,0 +1,23 @@
+.grid {
+  margin-left: - rem($base-line-height);
+  margin-top: - rem($base-line-height);
+}
+
+.grid__item {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: rem($base-line-height);
+  padding-top: rem($base-line-height);
+
+  & > :last-child {
+    margin-bottom:0;
+  }
+}
+
+.one--half {
+  width: 100%;
+
+  @include breakpoint($bp-screen-medium) {
+    width: 50%;
+  }
+}

@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'icomoon';
+  src:url('../fonts/icomoon.eot');
+  src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.woff') format('woff'),
+    url('../fonts/icomoon.ttf') format('truetype'),
+    url('../fonts/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &:before {
+    display: inline-block;
+    height: 100%; width: 100%;
+  }
+}
+
+.icon-linkedin:before {
+  content: "\e600";
+}
+.icon-github:before {
+  content: "\e601";
+}
+.icon-twitter:before {
+  content: "\e602";
+}
+.icon-mail:before {
+  content: "\e603";
+}
+.icon-skype:before {
+  content: "\e604";
+}
+.icon-screen:before {
+  content: "\e605";
+}
+.icon-house:before {
+  content: "\e606";
+}
+.icon-flag:before {
+  content: "\e607";
+}
+.icon-feather:before {
+  content: "\e608";
+}
+.icon-checkmark:before {
+  content: "\e609";
+}

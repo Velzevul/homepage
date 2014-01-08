@@ -1,0 +1,12 @@
+.footer {
+  font-size: rem(11);
+  font-weight: 300;
+  line-height: rem(2*$base-line-height);
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+  text-align: center;
+
+  color: $medium;
+  border-top: 1px solid $light;
+}
