@@ -788,7 +788,7 @@ ul {
 .media--rev .media__figure {
   float: right;
   margin-right: 0;
-  margin-left: 0.625pxrem;
+  margin-left: 0.625rem;
 }
 
 /* line 23, ../sass/abstractions/_media.scss */

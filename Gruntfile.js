@@ -69,6 +69,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-express');
   grunt.loadNpmTasks('grunt-open');
 
-  grunt.registerTask('prod', ['cssmin', 'imagemin']);
+  grunt.registerTask('prod', ['compass', 'cssmin', 'imagemin']);
   grunt.registerTask('default', ['compass', 'express', 'watch', 'open', 'express-keepalive']);
 };
