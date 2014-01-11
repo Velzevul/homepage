@@ -41,7 +41,7 @@ module.exports = function(grunt) {
     cssmin: {
       dist: {
         options: {
-          banner: '/* See not minified files on Github */',
+          banner: '/* See original non-minified files on Github https://github.com/Velzevul/homepage */',
           report: 'gzip',
         },
         files: {
