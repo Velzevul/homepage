@@ -45,17 +45,30 @@ module.exports = function(grunt) {
           report: 'gzip',
         },
         files: {
-          'app/css/main.min.css' : ['app/css/main.css']
+          'production/public/css/main.css' : ['app/css/main.css']
         }
+      }
+    },
+
+    imagemin: {
+      dynamic: {
+        files: [{
+          expand: true,                       // Enable dynamic expansion
+          cwd: 'app/images/',                 // Src matches are relative to this path
+          src: ['**/*.{png,jpg,gif}'],        // Actual patterns to match
+          dest: 'production/public/images'    // Destination path prefix
+        }]
       }
     }
   });
 
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-express');
   grunt.loadNpmTasks('grunt-open');
 
+  grunt.registerTask('prod', ['cssmin', 'imagemin']);
   grunt.registerTask('default', ['compass', 'express', 'watch', 'open', 'express-keepalive']);
 };
