@@ -70,6 +70,14 @@ p {
   margin: 0 0 rem($base-line-height) 0;
 }
 
+a {
+  display: inline-block;
+  text-decoration: none;
+
+  color: inherit;
+  border-bottom: 1px dashed $medium;
+}
+
 input {
   -webkit-font-smoothing: antialiased;
 }

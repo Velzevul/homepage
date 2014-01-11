@@ -1,0 +1,13 @@
+.page-not-found {
+  font-family: 'Press Start 2P', cursive;
+  text-transform: uppercase;
+
+  color: white;
+  background: url('../images/nf-mario.png') 50% bottom no-repeat,
+              url('../images/nf-block.jpg') bottom repeat-x,
+              black;
+}
+
+.page-not-found__header {
+  margin-bottom: 100px;
+}

@@ -8,6 +8,7 @@
 // Global configurations & fonts
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
 @import url(http://fonts.googleapis.com/css?family=Bad+Script&text=%26);
+@import url(http://fonts.googleapis.com/css?family=Press+Start+2P&text=404%20THANK%20YOU%20MARIO%21%20BUT%20OUR%20PRINCESS%20IS%20IN%20ANOTHER%20CASTLE%21);
 @import "compass";
 @import "config";
 
@@ -38,8 +39,10 @@
 @import "modules/decorative";
 @import "modules/separator";
 @import "modules/project";
+@import "modules/button";
 @import "modules/homelink";
 @import "modules/footer";
+@import "modules/page-not-found";
 
 // (SMACSS) Global state styles.
 //          Module-specific styles are inside module file

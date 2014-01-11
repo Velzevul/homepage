@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title><%= @title %></title>
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="dziubak, dzyubak, vdziubak, volo">
+    <meta name="author" content="Volodymyr Dziubak">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+
+  <body>
+    <%= yield %>
+
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script>
+      var homelink = $('#homelink');
+      $(document).scroll(function(){
+        if ( $(window).scrollTop() > 700 ) {
+          homelink.addClass('homelink--inv');
+        } else {
+          homelink.removeClass('homelink--inv');
+        }
+      });
+    </script>
+  </body>
+</html>

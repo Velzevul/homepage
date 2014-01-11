@@ -18,11 +18,32 @@
     background-repeat: no-repeat;
   }
 
-  &[class*="--teevy"] {
+  &[class*="--project"] {
     padding-bottom: rem($base-line-height);
 
     color: white;
+  }
+
+  &[class*="--teevy"] {
     @include background(linear-gradient(-181deg, rgba(0,0,0,0.00) 0%, #000000 100%), url('../images/teevy.jpg'));
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &[class*="--st-cms"] {
+    @include background(linear-gradient(-181deg, rgba(0,0,0,0.00) 0%, #000000 100%), url('../images/st-cms.jpg'));
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &[class*="--st-website"] {
+    @include background(linear-gradient(-181deg, rgba(0,0,0,0.00) 0%, #000000 100%), url('../images/st-website.jpg'));
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &[class*="--okmodels"] {
+    @include background(linear-gradient(-181deg, rgba(0,0,0,0.00) 0%, #000000 100%), url('../images/okmodels.jpg'));
     background-size: cover;
     background-repeat: no-repeat;
   }

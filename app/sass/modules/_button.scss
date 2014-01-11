@@ -1,0 +1,39 @@
+.button {
+  display: block;
+  width: rem(250);
+  margin-left: auto;
+  margin-right: auto;
+  padding: rem(0.5 * $base-line-height) rem($base-line-height);
+
+  text-decoration: none;
+
+  color: $dark;
+  border: 1px solid $dark;
+  border-radius: 50px;
+
+  @include transition-property(background-color, color);
+  @include transition-duration(0.3s, 0.3s);
+
+  & + & {
+    margin-top: rem($base-line-height);
+  }
+
+  @include breakpoint($bp-screen-medium) {
+    display: inline-block;
+
+    & + & {
+      margin-top: 0;
+      margin-left: rem($base-line-height);
+    }
+  }
+
+  &:hover {
+    color: white;
+    background: $dark;
+  }
+}
+
+.button__icon {
+  display: inline-block;
+  margin-right: rem(0.5 * $base-line-height);
+}
